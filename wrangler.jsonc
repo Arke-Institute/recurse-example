@@ -1,0 +1,20 @@
+{
+  "$schema": "https://raw.githubusercontent.com/cloudflare/workers-sdk/main/packages/wrangler/config-schema.json",
+  "name": "recurse-splitter",
+  "main": "src/index.ts",
+  "compatibility_date": "2024-12-30",
+  "compatibility_flags": ["nodejs_compat"],
+
+  "observability": {
+    "enabled": true
+  },
+
+  "vars": {
+    "AGENT_ID": "IIKHMJKECPH9QAZAFVP0BMWNFD",
+    "AGENT_VERSION": "0.1.0"
+  }
+
+  // Secrets (set via wrangler secret put):
+  // - ARKE_AGENT_KEY: Your agent API key (ak_...)
+  // - VERIFICATION_TOKEN: Set during registration
+}

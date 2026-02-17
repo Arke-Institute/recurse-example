@@ -1,0 +1,14 @@
+{
+  "label": "Recurse Splitter",
+  "description": "Recursively splits text into smaller segments until they are below a threshold. Used to test the recurse handoff feature.",
+  "endpoint": "https://recurse-splitter.nick-chimicles-professional.workers.dev",
+  "actions_required": ["entity:view", "entity:update"],
+  "accepts": {
+    "types": ["*"],
+    "cardinality": "one"
+  },
+  "produces": {
+    "types": ["*"],
+    "cardinality": "one"
+  }
+}

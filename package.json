@@ -1,0 +1,31 @@
+{
+  "name": "recurse-splitter",
+  "version": "0.1.0",
+  "description": "Klados worker that recursively splits text to test the recurse handoff feature",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "type-check": "tsc --noEmit",
+    "register": "npx tsx scripts/register.ts",
+    "register:prod": "npx tsx scripts/register.ts --production",
+    "register:workflow": "npx tsx scripts/register.ts --workflow recurse-test",
+    "register:workflow:prod": "npx tsx scripts/register.ts --workflow recurse-test --production",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "@arke-institute/rhiza": "file:../../../rhiza",
+    "@arke-institute/sdk": "^3.0.0",
+    "hono": "^4.0.0"
+  },
+  "devDependencies": {
+    "@arke-institute/klados-testing": "file:../../../rhiza/packages/klados-testing",
+    "@cloudflare/workers-types": "^4.20241230.0",
+    "@types/node": "^22.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.7.2",
+    "vitest": "^2.0.0",
+    "wrangler": "^3.99.0"
+  }
+}

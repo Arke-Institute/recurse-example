@@ -1,0 +1,29 @@
+# Dependencies
+node_modules/
+
+# Wrangler
+.wrangler/
+.dev.vars
+
+# State files (contain sensitive IDs)
+.klados-state.json
+.klados-state.prod.json
+.rhiza-state-*.json
+.rhiza-state-*.prod.json
+
+# Environment
+.env
+.env.local
+
+# Build outputs
+dist/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db

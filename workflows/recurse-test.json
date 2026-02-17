@@ -1,0 +1,18 @@
+{
+  "label": "Recurse Test - Text Splitter",
+  "description": "Recursively splits text until segments are below threshold. Uses recurse handoff for bounded iteration.",
+  "version": "1.0",
+  "entry": "split",
+  "flow": {
+    "split": {
+      "klados": { "id": "$SPLITTER_KLADOS" },
+      "then": {
+        "recurse": "split",
+        "max_depth": 10,
+        "route": [
+          { "where": { "property": "done", "equals": true }, "target": "done" }
+        ]
+      }
+    }
+  }
+}
