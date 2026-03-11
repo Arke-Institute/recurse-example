@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "@arke-institute/rhiza": "file:../../../rhiza",
-    "@arke-institute/sdk": "^3.0.0",
+    "@arke-institute/sdk": "^3.6.15",
     "hono": "^4.0.0"
   },
   "devDependencies": {
